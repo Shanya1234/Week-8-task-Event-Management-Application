@@ -1,0 +1,117 @@
+
+$form-multi-select-padding-y:               $input-padding-y;
+$form-multi-select-padding-x:               $input-padding-x;
+$form-multi-select-font-family:             $input-font-family;
+$form-multi-select-font-size:               $input-font-size;
+$form-multi-select-font-weight:             $input-font-weight;
+$form-multi-select-line-height:             $input-line-height;
+$form-multi-select-color:                   $input-color;
+$form-multi-select-disabled-color:          $gray-600;
+$form-multi-select-bg:                      $input-bg;
+
+$form-multi-select-bg-position:             right $form-multi-select-padding-x center;
+$form-multi-select-bg-size:                 16px 12px; // In pixels because image dimensions
+$form-multi-select-disabled-bg:             $gray-200;
+$form-multi-select-indicator-padding:       $form-multi-select-padding-x * 3; // Extra padding to account for the presence of the background-image based indicator
+$form-multi-select-indicator-color:         $gray-800;
+$form-multi-select-indicator:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-multi-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+
+$form-multi-select-border-width:            $input-border-width;
+$form-multi-select-border-color:            $input-border-color;
+$form-multi-select-border-radius:           $border-radius;
+$form-multi-select-box-shadow:              inset 0 1px 2px rgba($black, .075);
+
+$form-multi-select-focus-width:             $input-focus-width;
+$form-multi-select-focus-color:             $input-color;
+$form-multi-select-focus-bg:                $input-bg;
+$form-multi-select-focus-border-color:      shift-color($component-active-bg, -25);
+$form-multi-select-focus-box-shadow:        0 0 0 $form-multi-select-focus-width $input-btn-focus-color;
+
+$form-multi-select-selection-tags-padding-y:  .125rem;
+$form-multi-select-selection-tags-padding-x:  .125rem;
+
+$form-multi-select-tag-bg:             $light;
+$form-multi-select-tag-border-width:   $border-width;
+$form-multi-select-tag-border-color:   $border-color;
+$form-multi-select-tag-border-radius:  $border-radius;
+$form-multi-select-tag-margin-y:       .125rem;
+$form-multi-select-tag-margin-x:       .125rem;
+$form-multi-select-tag-padding-y:      subtract(($form-multi-select-padding-y - $form-multi-select-selection-tags-padding-y - $form-multi-select-tag-margin-y), $form-multi-select-tag-border-width);
+$form-multi-select-tag-padding-x:      .5rem;
+
+$form-multi-select-search-color:          $input-color;
+$form-multi-select-search-bg:             $input-bg;
+$form-multi-select-search-border-radius:  $border-radius;
+
+$form-multi-select-cleaner-width:         .75rem;
+$form-multi-select-cleaner-height:        .75rem;
+$form-multi-select-cleaner-padding-x:     .75rem;
+$form-multi-select-cleaner-padding-y:     .5rem;
+$form-multi-select-cleaner-color:         $medium-emphasis;
+$form-multi-select-cleaner-bg:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$form-multi-select-cleaner-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
+$form-multi-select-cleaner-hover-color:   $high-emphasis;
+$form-multi-select-cleaner-hover-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$form-multi-select-cleaner-hover-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
+$form-multi-select-cleaner-focus-color:   $high-emphasis;
+$form-multi-select-cleaner-focus-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$form-multi-select-cleaner-focus-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
+$form-multi-select-cleaner-border-color:  $input-border-color;
+
+$form-multi-select-select-all-padding-y:     .5rem;
+$form-multi-select-select-all-padding-x:     .75rem;
+$form-multi-select-select-all-color:         $medium-emphasis;
+$form-multi-select-select-all-bg:            transparent;
+$form-multi-select-select-all-hover-color:   $high-emphasis;
+$form-multi-select-select-all-hover-bg:      transparent;
+$form-multi-select-select-all-border-width:  $input-border-width;
+$form-multi-select-select-all-border-color:  $input-border-color;
+
+$form-multi-select-options-padding-y:      .5rem;
+$form-multi-select-options-padding-x:      .75rem;
+$form-multi-select-options-margin-top:     .625rem;
+$form-multi-select-options-font-size:      $font-size-base;
+$form-multi-select-options-color:          $body-color;
+$form-multi-select-options-bg:             $white;
+$form-multi-select-options-border-color:   $border-color;
+$form-multi-select-options-border-width:   $border-width;
+$form-multi-select-options-border-radius:  $border-radius;
+
+$form-multi-select-optgroup-label-font-weight:  $font-weight-bold;
+$form-multi-select-optgroup-label-color:        $disabled;
+
+$form-multi-select-option-padding-y:        .5rem;
+$form-multi-select-option-padding-x:        1.25rem;
+$form-multi-select-option-border-radius:    $border-radius;
+
+$form-multi-select-option-hover-color:     shift-color($gray-900, 5);
+$form-multi-select-option-hover-bg:        rgba($gray-100, .5);
+
+$form-multi-select-option-indicator-width:          1em;
+$form-multi-select-option-indicator-bg:             $form-check-input-bg;
+$form-multi-select-option-indicator-border:         $form-check-input-border;
+$form-multi-select-option-indicator-border-radius:  .25em;
+
+$form-multi-select-option-selected-bg:                      $light;
+$form-multi-select-option-selected-indicator-bg:            $form-check-input-checked-bg-color;
+$form-multi-select-option-selected-indicator-bg-image:      $form-check-input-checked-bg-image;
+$form-multi-select-option-selected-indicator-border-color:  $form-multi-select-option-selected-indicator-bg;
+
+$form-multi-select-option-disabled-color:  $gray-600;
+
+$form-multi-select-padding-y-lg:                 $input-padding-y-lg;
+$form-multi-select-padding-x-lg:                 $input-padding-x-lg;
+$form-multi-select-font-size-lg:                 $input-font-size-lg;
+$form-multi-select-selection-tags-padding-y-lg:  .125rem;
+$form-multi-select-selection-tags-padding-x-lg:  .125rem;
+$form-multi-select-tag-margin-y-lg:              .125rem;
+$form-multi-select-tag-margin-x-lg:              .125rem;
+$form-multi-select-tag-padding-y-lg:             subtract(($form-multi-select-padding-y-lg - $form-multi-select-selection-tags-padding-y-lg - $form-multi-select-tag-margin-y-lg), $form-multi-select-tag-border-width);
+$form-multi-select-tag-padding-x-lg:             .5rem;
+
+$form-multi-select-padding-y-sm:                 $input-padding-y-sm;
+$form-multi-select-padding-x-sm:                 $input-padding-x-sm;
+$form-multi-select-font-size-sm:                 $input-font-size-sm;
+$form-multi-select-selection-tags-padding-y-sm:  .0675rem;
+$form-multi-select-selection-tags-padding-x-sm:  .0675rem;
+$form-multi-select-tag-margin-y-sm:              .0675rem;
+$form-multi-select-tag-margin-x-sm:              .0675rem;
+$form-multi-select-tag-padding-y-sm:             subtract(($form-multi-select-padding-y-sm - $form-multi-select-selection-tags-padding-y-sm - $form-multi-select-tag-margin-y-sm), $form-multi-select-tag-border-width);
+$form-multi-select-tag-padding-x-sm:             .5rem;
